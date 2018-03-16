@@ -5,10 +5,24 @@
  */
 package com.almundo.callcenter.domain;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 /**
  *
  * @author frayotto
  */
 public class Identifier {
+     
+    private final long id;
+    
+    
+    public Identifier(long id){
+        this.id=id;
+    }
+    
+    
+    public long getId(){
+     return this.id;
+    }
     
 }

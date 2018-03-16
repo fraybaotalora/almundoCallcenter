@@ -11,4 +11,8 @@ package com.almundo.callcenter.businessLogic;
  */
 public interface BusinessCall {
     
+    void realizarLlamada(Dispatcher dispatcher);
+    
+    void pararLlamadas();
+    
 }

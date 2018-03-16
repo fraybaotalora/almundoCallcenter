@@ -5,10 +5,14 @@
  */
 package com.almundo.callcenter.businessLogic;
 
+import com.almundo.callcenter.domain.Call;
+
 /**
  *
  * @author frayotto
  */
 public interface Dispatcher {
+    
+    void dispatcherCall(Call llamada);
     
 }

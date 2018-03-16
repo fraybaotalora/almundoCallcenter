@@ -11,4 +11,14 @@ package com.almundo.callcenter.domain;
  */
 public class Call extends Identifier {
     
+    private long time;
+    
+    public Call(long id, long time) {
+        super(id);
+        this.time=time;
+    }
+    
+   public long getTime(){
+       return this.time;
+   } 
 }
