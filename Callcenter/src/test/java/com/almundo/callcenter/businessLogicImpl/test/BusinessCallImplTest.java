@@ -56,6 +56,8 @@ public class BusinessCallImplTest {
         this.crear10Llamadas();
         myLlamada.parallelStream().forEach(dispatcher::dispatcherCall);
    
+        //En el peor de los casos cada llamada sera de 10 segundos, lo cual 10 llamadas multiplicado por 10 da 100 segundos, motivo por el cual
+        //se pone a dormir el hilo por este tiempo para que pueda generar las llamadas correspondientes
           try {
             TimeUnit.SECONDS.sleep(100);
         } catch (InterruptedException ex) {
@@ -69,7 +71,10 @@ public class BusinessCallImplTest {
         logger.info("Realizando 20 llamadas");
         this.crear20Llamadas();
         myLlamada.parallelStream().forEach(dispatcher::dispatcherCall);
-         try {
+        
+        //En el peor de los casos cada llamada sera de 10 segundos, lo cual 20 llamadas multiplicado por 10 da 200 segundos, motivo por el cual
+        //se pone a dormir el hilo por este tiempo para que pueda generar las llamadas correspondientes
+        try {
             TimeUnit.SECONDS.sleep(200);
         } catch (InterruptedException ex) {
           
@@ -80,13 +85,13 @@ public class BusinessCallImplTest {
     }
     
     
-    
+    @Test
       public void crear20Llamadas(){
         Util util=new Util();
         for(int i=0; i<20;i++){
           this.myLlamada.add(new Call(util.getIdandIncrement(),util.randomicoTiempo(10, 5)));
         }
-        Assert.assertEquals(50, myLlamada.get(myLlamada.size()-1).getId());
+        Assert.assertEquals(20, myLlamada.get(myLlamada.size()-1).getId());
     }
     
    
