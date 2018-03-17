@@ -5,22 +5,30 @@
  */
 package com.almundo.callcenter.domain;
 
-import java.util.concurrent.atomic.AtomicLong;
 
 /**
  *
- * @author frayotto
+ * @author Frayba otalora
  */
 public class Employee extends Identifier{
     
     private final TypeEmployee tipo;
     
+    /**
+     * Metodo constructor de la clase Call
+     * @param id identificador del empleado
+     * @param tipo rol del empleado dentro del callcenter
+     */
     public Employee(long id,TypeEmployee tipo){
        super(id);
        this.tipo=tipo;
        
     }
     
+    /**
+     * Metodo encargado de devolver el rol del empleado
+     * @return tipo  rol del empleado en el callcenter
+     */
     public TypeEmployee getTipo(){
       return this.tipo;
     }

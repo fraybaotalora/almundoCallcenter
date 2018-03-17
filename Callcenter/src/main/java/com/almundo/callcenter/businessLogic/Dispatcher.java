@@ -9,7 +9,7 @@ import com.almundo.callcenter.domain.Call;
 
 /**
  *
- * @author frayotto
+ * @author Frayba otalora
  */
 public interface Dispatcher {
     

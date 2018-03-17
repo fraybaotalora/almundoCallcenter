@@ -7,7 +7,7 @@ package com.almundo.callcenter.businessLogic;
 
 /**
  *
- * @author frayotto
+ * @author Frayba otalora
  */
 public interface BusinessCall {
     

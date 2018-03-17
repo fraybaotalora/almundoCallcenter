@@ -7,17 +7,25 @@ package com.almundo.callcenter.domain;
 
 /**
  *
- * @author frayotto
+ * @author Frayba otalora
  */
 public class Call extends Identifier {
     
-    private long time;
+    private final long time;
     
+     /**
+     * Metodo constructor de la clase Call
+     * @param id identificador de la llamada
+     * @param time tiempo de duracion de la llamada
+     */
     public Call(long id, long time) {
         super(id);
         this.time=time;
     }
-    
+    /**
+     *  Metodo permite obtener el tiempo de duracion de la llamada    
+     * @return el tiempo que dura la llamada
+    */
    public long getTime(){
        return this.time;
    } 

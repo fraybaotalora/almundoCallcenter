@@ -24,14 +24,20 @@ public class BusinessCallImpl extends BusinessThreadImpl implements BusinessCall
     private static final int TIEMPO_MIN_LLAMADA=5;
     private static final int TIEMPO_CREAR_LLAMADA=100;
     private static final int TIEMPO_RETRASO_LLAMADA=0;
-    private final Dispatcher dispatcher=null;
-    
-    
+
+    /**
+     * Metodo constructor para el controlador de las llamadas
+     * @param tamañoPool  el numero de conexiones que ha de manejar al tiempo.
+     */
     public BusinessCallImpl(int tamañoPool) {
         super(tamañoPool);
     }
     
-
+    
+    /**
+     * Metodo encargado de generar las llamadas y llamar al despachador para asignar las llamadas
+     * @param dispatcher  objeto de la clase dispatcher  en la cual se realiza el proceso de respuesta de llamada
+     */
     @Override
     public void realizarLlamada(Dispatcher dispatcher) {
         logger.warning("Iniciando proceso de llamadas");
@@ -50,11 +56,13 @@ public class BusinessCallImpl extends BusinessThreadImpl implements BusinessCall
        
     }
     
-
+/**
+     * Metodo encargado detener la generacion de llamadas
+     */
     @Override
     public void pararLlamadas() {
          logger.info("Deteniendo produccion de llamadas");
-        super.stop();
+        this.detener();
     }
  
 }

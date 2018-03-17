@@ -7,7 +7,7 @@ package com.almundo.callcenter.domain;
 
 /**
  *
- * @author frayotto
+ * @author Frayba otalora
  */
 public enum TypeEmployee {
     

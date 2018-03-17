@@ -7,8 +7,12 @@ package com.almundo.callcenter.businessLogic;
 
 /**
  *
- * @author frayotto
+ * @author Frayba otalora
  */
 public interface BusinessThread {
+    
+    boolean corriendo();
+    
+    void detener();
     
 }

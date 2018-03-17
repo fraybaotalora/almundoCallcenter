@@ -5,24 +5,29 @@
  */
 package com.almundo.callcenter.domain;
 
-import java.util.concurrent.atomic.AtomicLong;
-
 /**
  *
- * @author frayotto
+ * @author Frayba otalora
  */
 public class Identifier {
-     
+
+    //atributos de la clase identificador
     private final long id;
-    
-    
-    public Identifier(long id){
-        this.id=id;
+
+     /**
+     * Metodo constructor
+     * @param id  numero de identificacion otorgado al objeto
+     */
+    public Identifier(long id) {
+        this.id = id;
     }
-    
-    
-    public long getId(){
-     return this.id;
+
+    /**
+     * Metodo encargadop de devolver el identificador del objeto
+     * @return id  numero de identificacion otorgado al objeto
+     */
+    public long getId() {
+        return this.id;
     }
-    
+
 }

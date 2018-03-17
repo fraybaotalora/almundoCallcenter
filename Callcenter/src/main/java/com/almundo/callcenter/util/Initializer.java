@@ -13,15 +13,22 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author frayotto
+ * @author Frayba otalora
  */
 public class Initializer {
 
     private final static Logger logger = Logger.getLogger(Initializer.class.getName());
 
+    /**
+     * Metodo constructor de la clase Initializer
+     */
     public Initializer() {
     }
 
+    /**
+     * Metodo para crear los empleados para el callcenter
+     * @return PriorityBlockingQueue cola de prioridad donde se encuentran los empleados que se crearon para la empresa
+     */
     public PriorityBlockingQueue crearEmpleados() {
         logger.info("Iniciando proceso de creacion de empleados");
         Util util = new Util();
@@ -33,7 +40,6 @@ public class Initializer {
         myEmpleados.add(new Employee(util.getIdandIncrement(), TypeEmployee.SUPERVISOR));
         myEmpleados.add(new Employee(util.getIdandIncrement(), TypeEmployee.OPERADOR));
         myEmpleados.add(new Employee(util.getIdandIncrement(), TypeEmployee.OPERADOR));
-
         
          logger.info("Finaliza proceso de creacion de empleados");
         return myEmpleados;
