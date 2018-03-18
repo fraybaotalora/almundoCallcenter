@@ -21,7 +21,7 @@ Guía de instalación
 La aplicación se puede instalar de dos maneras: Clonarla a través de GIT o descargarla en ZIP desde el repositorio
 
 
-Instalacion con git
+Instalación con git
 -----------------
 1. Instalar [git](https://git-scm.com/downloads) en el computador
 
