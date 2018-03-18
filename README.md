@@ -7,9 +7,9 @@ Desarrollo de proyecto como prueba para desarrollador backend en ALMUNDO
 Descripción y contexto
 ----------------------
 
-La aplicacion requerida para el proyecto de prueba  se encuentra desarrollada utilizando MAVEN como  herramienta de automatización de compilación y JRE 1.8 ya que se utilizan expresiones lambda y otros elementos de esta version de java.
+La aplicación requerida para la prueba  se encuentra desarrollada utilizando MAVEN como  herramienta de automatización de compilación y JRE 1.8 ya que se utilizan expresiones lambda y otros elementos de esta version de java.
 
-En el repositorio se podran encontrar los siguientes elementos:
+En el repositorio se podrán encontrar los siguientes elementos:
 
 - Carpeta de nombre "Callcenter": Donde se encuentra la aplicación desarollada.
 - Archivo png de nombre "Diagrama de clases.png": Donde se encuentra el diagrama de clases de la aplicación.
