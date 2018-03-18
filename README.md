@@ -15,7 +15,7 @@ En el repositorio se podrán encontrar los siguientes elementos:
 - Archivo png de nombre "Diagrama de clases.png": Donde se encuentra el diagrama de clases de la aplicación.
 - Archivo pdf de nombre "Explicacion aplicacion y respuesta a extras": En el se explica la arquitectura utilizada en la aplicación y se da respuesta a las preguntas generadas para la prueba.
 
-
+__________________________________________________________________________________________________________________________
 Guía de instalación
 --------------------
 La aplicación se puede instalar de dos maneras: Clonarla a través de GIT o descargarla en ZIP desde el repositorio
@@ -46,6 +46,7 @@ Descargar proyecto en formato .zip
 
 4. Se deben mostrar los archivos que se ven en el repositorio.
 
+_______________________________________________________________________________________________________________________________
 
 Abrir la aplicación
 ------------------
@@ -81,12 +82,18 @@ Las dependencias que utiliza el proyecto son:
 - log4j-api-2.8.2.jar: Utilizada para manejar log dentro de la aplicación
 - junit-4-12-jar: Utilizada para llevar a cabo test unitarios
 
+___________________________________________________________________________________________________________________________
 
 Ejecutar Aplicación
 -------------------
 
-Para ejecutar la aplicación se debe abrir el paquete "com.almundo.callcenter.App", dar click derecho sobre la clase "MainApp.java" y buscar la opción "Ejecutar como java Aplication" en Eclipse o la opción "Run File" en Netbeans.
+Para ejecutar la aplicación se debe abrir el paquete "com.almundo.callcenter.App", dar click derecho sobre la clase "MainApp.java" y buscar la opción "Run As -- java Aplication" en Eclipse o la opción "Run File" en Netbeans.
 
 Una vez se de click, se iniciara la ejecución y se abrira la consola en la cual se podran observar los logs.info de cada uno de los procesos que se encuentra haciendo la aplicación. Una vez finalizada la ejecución aparecera una mensaje que dice "BUILD SUCCESS"
 
+__________________________________________________________________________________________________________________________
 
+Ejeuctar Test
+-----------------
+
+Para ejecutar los test se debe ir a la carpeta "Test" dentro de la aplicación, y en cada una de las clases que aparece se da click derecho y se busca la opción  "Test File" en netbeans o  "Run As --JUnit Test" en Eclipse. Automaticamente se iniciara la ejecución de los mismos, y al finalizar se podra observar un reporte con la cantidad de Test ejecutados y su estado final.
